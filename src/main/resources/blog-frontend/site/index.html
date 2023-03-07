@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/d737fcb628.js" crossorigin="anonymous"></script>
+    <!-- 用户CSS文件 -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/sidebars.css">
+    <link rel="shortcut icon" href="../images/icon.png">
+
+</head>
+<body>
+    <header class="p-3 bg-primary text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <span href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <i class="fa fa-apple" style="font-size:40px;color:white"></i>
+            </span>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white" style="font-weight:600;">主页</a></li>
+              <li><a href="#" class="nav-link px-2 text-white" style="font-weight:300">生活文档</a></li>
+              <li><a href="#" class="nav-link px-2 text-white" style="font-weight:300">博客</a></li>
+              <li><a href="#" class="nav-link px-2 text-white" style="font-weight:30">资源</a></li>
+              <li><a href="#" class="nav-link px-2 text-white" style="font-weight:300">其他</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-moon text-black" style="font-size:25px;"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-moon text-black" style="font-size:25px;"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-sun" style="font-size:25px"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <!-- <header id="header_section" class="bg-primary">
+        <nav id="nav_section">
+            <ul>
+                <li><a href="#index"><i class="fa fa-apple" style="font-size:25px;color:white"></i></a></li>
+                <li><a href="#Doc" class="active">Doc</a></li>
+                <li><a href="#Blogs">Blog</a></li>
+                <li><a href="#Blogs">Diary</a></li>
+                <li><a href="#Blogs">Test</a></li>
+            </ul>
+        </nav>
+        <div id="search_box">hello</div>
+    </header>    -->
+
+     <!-- <main id="main">
+        <section class=".container content">
+        </section>
+    </main> -->
+    <div class="flex-container">
+        <aside id="aside_left" class="item">
+            <div class="flex-shrink-0 p-3 bg-white" style="width: 200px;">
+                <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <i class="fa-solid fa-sliders"></i>
+                <span class="fs-5 fw-semibold">&nbsp;&nbsp;&nbsp;文章列表</span>
+                </a>
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#happiness-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-face-laugh-wink"></i>&nbsp;&nbsp;关于幸福
+                        </button>
+                        <div class="collapse show" id="happiness-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">焦虑</a></li>
+                            <li><a href="#" class="link-dark rounded">日常</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#study-collapse" aria-expanded="false">
+                            <i class="fa-brands fa-leanpub"></i>&nbsp;&nbsp;工作学习
+                        </button>
+                        <div class="collapse" id="study-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">环境布置</a></li>
+                            <li><a href="#" class="link-dark rounded">基本原则</a></li>
+                            <li><a href="#" class="link-dark rounded">小技巧</a></li>
+
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#society-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;人际交往
+                        </button>
+                        <div class="collapse" id="society-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">沟通</a></li>
+                            <li><a href="#" class="link-dark rounded">恋爱</a></li>
+                            <li><a href="#" class="link-dark rounded">亲人</a></li>
+                            <li><a href="#" class="link-dark rounded">朋友</a></li>
+                        
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#health-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-stethoscope"></i>&nbsp;&nbsp;身体健康
+                        </button>
+                        <div class="collapse" id="health-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">日常习惯</a></li>
+                            <li><a href="#" class="link-dark rounded">腰椎颈椎</a></li>
+                            <li><a href="#" class="link-dark rounded">五脏六腑</a></li>
+                            <li><a href="#" class="link-dark rounded">各处关节</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mind-collapse" aria-expanded="false">
+                            <i class="fa-brands fa-mendeley"></i>&nbsp;&nbsp;思维相关
+                        </button>
+                        <div class="collapse" id="mind-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">解决问题</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;其他
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">New...</a></li>
+                            <li><a href="#" class="link-dark rounded">Profile</a></li>
+                            <li><a href="#" class="link-dark rounded">Settings</a></li>
+                            <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div id="main" class="flex-item">
+            <h1 id="section1">明确输入输出</h1>
+<br>
+<p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:</p>
+<br>
+<hr>
+<br>
+            <h1 id="section2">重塑大脑连接</h1>
+            <br>
+            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>
+            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>
+<hr>
+<br>
+<br>
+            <h1 id="section3">多例子重复</h1>
+            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>            <p>
+                Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:
+            </p>
+            <br>
+        </div>
+        <aside id="aside_right" class="flex-item">
+            <p class="h3">导航</p>
+            <hr>
+            <a href="#section1">明确输入输出</a><br><br>
+            <a href="#section2">重塑大脑连接</a><br><br>
+            <a href="#section3">多例子重复</a>
+        </aside>
+    </div>
+    <footer id="footer_section"></footer>
+
+
+</body>
+</html>

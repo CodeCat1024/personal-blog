@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../editor.md/css/editormd.min.css">
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../editor.md/lib/marked.min.js"></script>
+    <script src="../editor.md/lib/prettify.min.js"></script>
+    <script src="../editor.md/editormd.js"></script>
+    <style>
+        #editor {
+            border-radius: 15px;
+            color:aqua;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="editor">
+        hello
+    </div>
+
+    <script>
+        var editor = editormd("editor", {
+            //尺寸必须设置在这里
+            width: "80%",
+            height: "500px",
+            //编辑器中的初始内容
+            markdown: '# 在这里写下一篇博客',
+            //指定editor.md依赖的插件路径
+            path: "../editor.md/lib/"
+        })
+    </script>
+
+    <script>
+        $.ajax({
+            type: 'get',
+            url: 'http://www.sogou.com/index.html',
+            success: function(body){
+                console.log("response is" + body);
+            },
+            error: function() {
+                console.log("response is fail");
+            }        
+        });
+    </script>
+</body>
+</html>
